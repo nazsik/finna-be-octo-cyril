@@ -6,9 +6,30 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
+
 <body>
+<div class ="navbar navbar-default navbar-fixed-top">
+	<div class="container"\>
+		<div class="navbar-inner">
+			<a href="#" class="navbar-brand"> Micro 
+				<ul class="nav navbar-nav">
+					<li><%= link_to "all statuses", statuses_path %></li>
+				</ul>
 
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="container">
 <%= yield %>
+</div>
 
+
+<div class= "navbar navbar-default navbar-fixed-bottom">
+	
+
+</div>
 </body>
 </html>
